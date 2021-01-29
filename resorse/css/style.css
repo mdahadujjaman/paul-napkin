@@ -1,0 +1,479 @@
+/* ==================
+Author Deatils:- 
+----------------
+Author Name: Md. Ahadujjaman
+Author URI: 
+Author Conatct: email:- ahadujjaman@gmail.com
+===================*/
+/* ==================
+Template Deatils:- 
+----------------
+Template Name: Paul Napkin
+Template URL: 
+Template Details: It's a Personal Portfolio Website
+===================*/
+/* ==================
+CSS Index:- 
+----------------
+1. Google Fonts
+2. Common CSS
+3. Re-uasble CSS
+4. Header Area
+5. About Section
+6. Process Section
+7. Work Experiance Section
+8. Latest Work Section
+9. Testimonial Section
+10. Contact Section
+11. Footer Section
+===================*/
+/* ==================
+1. Google Fonts
+===================*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+/* ==================
+2. Common CSS
+===================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    color: #000;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+
+} 
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+
+/* ==================
+3. Re-uasble CSS
+===================*/
+.row{
+    width:59.37rem;
+    margin: auto;
+}
+section{
+    padding: 7.81rem 0;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.62rem;
+    font-weight: 700;
+}
+h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.btn{
+    display: inline-block;
+    padding:1.06rem 4.37rem;
+    background-color:#ff2b4a;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    text-align: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+span, p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.ex-title{
+    font-size: 1.62rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.sub-title{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+}
+.section-title{
+    margin-bottom: 3.5rem;
+}
+/* ==================
+4. Header Area
+===================*/
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/cover.jpg) no-repeat center center / cover;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    padding: 5.62rem 0;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 2rem;
+}
+.menu{
+    float: right;
+}
+.menu ion-icon{
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: .2rem;
+}
+.hero-text-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 59rem;
+}
+.hero-text-area h1{
+    color: #fff;
+    font-size: 4.06rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    display: inline-block;
+    margin: 1rem 0;
+}
+.hero-title::before{
+    content: '';
+    height: .2rem;
+    background-color: #fff;
+    width: 100%;
+    display: block;
+}
+.hero-title::after{
+    content: '';
+    height: .2rem;
+    background-color: #fff;
+    width: 100%;
+    display: block;
+}
+.hero-text-area span{
+    color: #fff;
+    font-size: 1.5rem;    
+}
+.next{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+}
+.next a ion-icon{
+    color: #fff;
+    font-size: 2rem;
+}
+/* ==================
+5. About Section
+===================*/
+#about{
+
+}
+.about-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+}
+.grid-about-item{
+    
+}
+.grid-about-item img{
+    
+}
+.paul-napkin{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.paul-description{
+    margin: 2rem 0;
+}
+.btn-full:hover{
+    color: #ff2b4a;
+    border: 1px solid #ff2b4a;
+    background-color: transparent;
+}
+/* ==================
+6. Process Section
+===================*/
+#process{
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.section-title{
+    
+}
+.section-title h2{
+
+}
+.section-title p{
+    margin: 1.5rem 0;
+}
+.process-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    color: #fff;
+}
+.process-grid-item{
+    background-color: #000;
+    padding: 5.43rem 0;
+}
+.process-icon{
+    
+}
+.process-icon ion-icon{
+    font-size: 2.8rem;
+}
+.process-grid-item h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+.process-grid-item:nth-child(1){
+    background-color:#10c6fc;
+}
+.process-grid-item:nth-child(2){
+    background-color:#835aeb;
+}
+.process-grid-item:nth-child(3){
+    background-color:#002453;
+}
+.process-grid-item:nth-child(4){
+    background-color:#ff2b4a;
+}
+/* ==================
+7. Work Experiance Section
+===================*/
+#experiance-education{
+
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(../img/experiance.jpg) no-repeat center center/cover fixed;
+}
+.exp-grid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    color: #fff;
+}
+.exp-grid-item{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2.5rem  2rem;
+}
+
+.exp-grid-item p{
+    padding: 1.62rem 0;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.3;
+    color: #999;
+}
+.exp-grid-item span{
+    font-weight: 400;
+    color: #999;
+}
+.exp-grid-item h4{
+    padding: 1.62rem 0;
+    font-weight: 500;
+}
+hr{
+    color: #fff;
+}
+/* ==================
+8. Latest Work Section
+===================*/
+#latest-work{
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.section-title{
+    
+}
+.section-title h3{
+    
+}
+.section-title p{
+    margin: 1.5rem 0;
+}
+.section-filter{
+    margin-bottom: 2.5rem;
+}
+.section-filter li{
+    display: inline-block; 
+}
+.section-filter li a{
+    display: block;
+    background-color: #000;
+    color: #fff; 
+    padding: .5rem 1.5rem;
+    transition: .3s;
+}
+.section-filter li:hover a{
+color: #fff;
+background-color: rgb(168, 41, 41);
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: .2rem;
+}
+.work-grid-item:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.work-grid-item:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+.work-grid-item a img{
+    width: 100%;
+    height: 12.5rem;
+}
+/* ==================
+9. Testimonial Section
+===================*/
+#testimonial{
+    background:linear-gradient( rgba(192, 206, 205,0.5),rgba(192, 206, 205,0.5)), url(../img/signature.jpg) no-repeat center top/cover fixed ;
+}
+.testimonial-grid-section{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.tm-grid-item{
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: .3rem;
+    
+}
+.tm-grid-item h4{
+    padding-bottom: .8rem;
+}
+.tm-grid-item span{
+    color: #222;
+}
+.quote{
+    height: 2.81rem;
+    width: 3.75rem;
+    margin-bottom: 3.12rem;
+}
+.signature{
+    width: 10.43rem;
+    height: 4.37rem;
+    margin: 2rem 0;
+}
+/* ==================
+10. Contact Section
+===================*/
+#contact{
+    background:radial-gradient(rgba(60,104,121,0.7), rgba(115,106,119,0.6));
+}
+.contact-grid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+}
+
+.ct-grid-item:nth-child(1),
+.nested-ct-grid-item{
+    background-color: rgba(0,0,0,0.7);
+    padding: 2.5rem 2rem;
+    color: #fff;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: 100%;
+    margin: .8rem 0;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    color: #444;
+}
+form textarea{
+    height: 10rem;
+}
+.form-btn {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.nested-ct-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    color: #fff;
+}
+/* ==================
+11. Footer Section
+===================*/
+footer{
+    background-color: #222222;
+    text-align: center;
+    padding: 2.5rem;
+}
+.social-list{
+    
+}
+.social-list ul{
+
+}
+.social-list ul li{
+display: inline-block;
+}
+.social-list ul li a{
+    display: block;
+    color: #aaaaaa;
+    font-size: 1.5rem;
+    
+}
+.social-list ul li a ion-icon{
+    border-right: 1px solid #fff;
+    padding: 0 2rem;
+}
+.social-list ul li:nth-child(5) a ion-icon {
+    border-right: none;
+    
+}
+.social-list ul li a:hover{
+    color: #ff2b4a;
+}
+.copyright{
+    color: #fff;
+    margin:2rem 0;
+}
+.above-icon{
+    
+}
+.above-icon a ion-icon{
+    color: #aaaaaa;
+    font-size: 3rem;
+}
+
+
+
